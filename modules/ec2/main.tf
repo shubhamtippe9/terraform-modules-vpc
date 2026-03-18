@@ -4,7 +4,7 @@ resource "aws_instance" "name" {
     vpc_security_group_ids = [aws_security_group.sg.id]
     subnet_id = var.subnet_id
     tags = {
-        Name = my_ec2
+        Name = "my_ec2"
     }
 } 
 resource "aws_security_group" "name" {
@@ -27,6 +27,6 @@ resource "aws_security_group" "name" {
         cidr_blocks = ["0.0.0.0/0"]
     }
     tags = {
-        Name = new_sg
+        Name = "new_sg"
     }
 }
