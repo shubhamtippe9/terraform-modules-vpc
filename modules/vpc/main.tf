@@ -1,7 +1,7 @@
 resource "aws_vpc" "main_vpc" {
     cidr_block = var.vpc_cidr
     tags = {
-        Name = fct_vpc
+        Name = "fct_vpc"
     }
 }
 resource "aws_subnet" "subnet" {
